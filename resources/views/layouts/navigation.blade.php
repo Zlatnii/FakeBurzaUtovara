@@ -55,14 +55,14 @@
         <x-nav-link :href="route('dashboard')">
             {{ __('Admin Panel') }}
         </x-nav-link>
-        <x-nav-link :href="route('dashboard')">
+        <x-nav-link :href="route('users.index')">
             {{ __('Korisnici') }}
+        </x-nav-link>
+        <x-nav-link :href="route('users.index')">
+            {{ __('Uloge') }}
         </x-nav-link>
         <x-nav-link :href="route('about')">
             {{ __('O nama') }}
-        </x-nav-link>
-        <x-nav-link :href="route('dashboard')">
-            {{ __('Kontakt') }}
         </x-nav-link>
         <x-nav-link :href="route('dashboard')">
             {{ __('Ponuda utovara') }}

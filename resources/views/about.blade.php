@@ -17,15 +17,17 @@
     <div class="container text-center mt-5">
         <h1>Dobrodošli u Našu Firmu!</h1>
         
-        <p>Naša firma, "Firma d.o.o.", s ponosom posluje u prekrasnom gradu Zagrebu, Hrvatska. Sve svoje aktivnosti usmjeravamo prema pružanju kvalitetnih usluga našim klijentima.</p>
+        <p>Naša firma, "Firma d.o.o.", s ponosom posluje u svim krajevima Lijepe naše.<br> 
+        Sve svoje aktivnosti usmjeravamo prema pružanju kvalitetnih usluga našim klijentima.</p>
 
         <h2>Lokacija: Slatina</h2>
         <p>Adresa: Marka Marulića BB, 33520 Slatina</p>
         <p>Kontakt: +385 91 234 5678</p>
-        <p>Godina osnivanja: 2017</p>
+        <p>Email: email@gmail.com</p>
+        <p>Godina osnivanja: 2023</p>
 
-        <h2>Google Lokacija:</h2>
-        <div id="map"></div>
+        <h2>Naša Google Lokacija:</h2>
+        <div id="map" class="mt-2"></div>
     </div>
 
     <!-- Uključivanje Bootstrap JS-a (opciono) -->

@@ -9,6 +9,20 @@
             <x-input-error :messages="$errors->get('name')" class="mt-2" />
         </div>
 
+          <!-- Surname -->
+          <div>
+            <x-input-label for="surname" :value="__('Surname')" />
+            <x-text-input id="surname" class="block mt-1 w-full" type="text" name="surname" :value="old('surname')" required autofocus autocomplete="surname" />
+            <x-input-error :messages="$errors->get('surname')" class="mt-2" />
+        </div>
+
+           <!-- Osobni identifikacijski broj -->
+           <div>
+            <x-input-label for="oib" :value="__('OIB (Osobni identifikacijski broj)')" />
+            <x-text-input id="oib" class="block mt-1 w-full" type="text" maxlength="11" name="oib" :value="old('oib')" required autofocus autocomplete="oib" />
+            <x-input-error :messages="$errors->get('oib')" class="mt-2" />
+        </div>
+
         <!-- Email Address -->
         <div class="mt-4">
             <x-input-label for="email" :value="__('Email')" />
