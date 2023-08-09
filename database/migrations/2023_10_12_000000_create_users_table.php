@@ -21,6 +21,7 @@ return new class extends Migration
             $table->string('password');
             $table->rememberToken();
             $table->timestamps();
+            $table->timestamp('last_login')->nullable();
             $table->timestamp('sent')->nullable();
             $table->timestamp('collected_from_the_sender')->nullable();
             $table->foreignId('package_id')->nullable()->constrained('package')->onDelete('cascade');

@@ -3,6 +3,7 @@
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AboutController;
+use App\Http\Controllers\RolesController;
 use App\Http\Controllers\UserController;
 
 /*
@@ -23,6 +24,8 @@ Route::get('/', function () {
 Route::get('/about', [AboutController::class, 'index'])->name('about');
 
 Route::resource('/users', UserController::class);
+Route::resource('/roles', RolesController::class);
+
 
 Route::get('/dashboard', function () {
     return view('dashboard');

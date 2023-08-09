@@ -29,7 +29,7 @@
         <td>{{ $user->surname }}</td>
         <td>{{ $user->email }}</td>  
         <td>{{ $user->role_name }}</td>
-        <td>{{ $user->user_package }}</td>
+        <td>{{$user->package_id}}</td>
         @if($user->last_login === null)
         <td>Welcome, you are new here!</td>
         @else

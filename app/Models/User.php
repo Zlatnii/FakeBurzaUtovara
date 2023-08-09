@@ -19,6 +19,11 @@ class User extends Authenticatable
      *
      * @var array<int, string>
      */
+    public $timestamps = true;
+    protected $table = 'users';
+    
+    protected $dates =['last_login'];
+
     protected $fillable = [
         'name',
         'surname',
@@ -47,6 +52,16 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
         'password' => 'hashed',
+    ];
+
+    protected $date = [
+        'email_verified_at',
+        'created_at',
+        'updated_at',
+        'deleted_at',
+        'last_login',
+        'sent',
+        'collected_from_the_sender',
     ];
 
     public function role()

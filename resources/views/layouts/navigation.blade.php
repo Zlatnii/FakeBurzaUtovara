@@ -58,7 +58,7 @@
         <x-nav-link :href="route('users.index')">
             {{ __('Korisnici') }}
         </x-nav-link>
-        <x-nav-link :href="route('users.index')">
+        <x-nav-link :href="route('roles.index')">
             {{ __('Uloge') }}
         </x-nav-link>
         <x-nav-link :href="route('about')">

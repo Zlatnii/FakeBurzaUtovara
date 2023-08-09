@@ -23,10 +23,11 @@
                 </div>
                 <div class="form-group">
                     <label for="exampleInputRole">Roles</label>
-                    <select class="form-control" id="exampleInputRole" name="role">
-                        <option value="{{$user->role}}">Select Role</option>
+                    <select class="form-control" id="exampleInputRole" name="role_id">
                         @foreach($roles as $role)
-                            <option value="{{ $role->id }}">{{ $role->name }}</option>
+                            <option value="{{ $role->id }}" {{ $user->role_id == $role->id ? 'selected' : '' }}>
+                                {{ $role->name }}
+                            </option>
                         @endforeach
                     </select>
                     <small id="roleHelp" class="form-text text-muted">Please enter a role.</small><br>
