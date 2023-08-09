@@ -130,4 +130,10 @@ class UserController extends Controller
         User::destroy($id);
         return redirect('users')->with('deleted', 'User deleted succesfully!');
     }
+
+    public function users()
+    {
+        $userCount = User::count();
+        return view('dashboard', compact('userCount'));
+    }
 }

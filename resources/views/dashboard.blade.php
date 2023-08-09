@@ -17,7 +17,7 @@
         <div class="max-w-2xl mx-auto sm:px-6 lg:px-10">
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="p-3 text-gray-900">
-                    {{ __("Broj trenutnih korisnika: 14") }}
+                    <p> Broj trenutnih korisnika: {{ \App\Models\User::all()->count() }}</p>
                 </div>
             </div>
         </div>
