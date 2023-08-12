@@ -22,10 +22,8 @@ return new class extends Migration
             $table->rememberToken();
             $table->timestamps();
             $table->timestamp('last_login')->nullable();
-            $table->timestamp('sent')->nullable();
-            $table->timestamp('collected_from_the_sender')->nullable();
-            $table->foreignId('package_id')->nullable()->constrained('package')->onDelete('cascade');
-            $table->foreignId('role_id')->nullable()->constrained('roles')->onDelete('cascade');
+            $table->foreignId('package_id')->nullable()->constrained('package')->onDelete('set null');
+            $table->foreignId('role_id')->nullable()->constrained('roles')->onDelete('set null');
         });
     }
 

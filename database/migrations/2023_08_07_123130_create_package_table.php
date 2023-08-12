@@ -18,6 +18,8 @@ return new class extends Migration
             $table->text('memo');
             $table->string('price');
             $table->string('weight');
+            $table->timestamp('sent')->nullable();
+            $table->timestamp('collected_from_the_sender')->nullable();
             $table->timestamps();
         });
     }

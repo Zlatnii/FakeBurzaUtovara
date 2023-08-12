@@ -22,6 +22,6 @@ class Package extends Model
 
     public function users()
     {
-        $this->belongsTo(User::class);
+        $this->hasMany(User::class);
     }
 }

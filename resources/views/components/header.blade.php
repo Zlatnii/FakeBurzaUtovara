@@ -17,6 +17,6 @@
       height: 100vh;
     }
   </style>
-  <title>Users</title>
+  <title>Burza Utovara</title>
 </head>
 <body>
