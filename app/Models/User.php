@@ -9,6 +9,7 @@ use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
 use App\Models\Role;
 use App\Models\Package;
+use App\Models\Post;
 
 class User extends Authenticatable
 {
@@ -72,5 +73,10 @@ class User extends Authenticatable
     public function packages()
     {
         return $this->belongsTo(Package::class);
+    }
+
+    public function posts()
+    {
+        return $this->belongsTo(Post::class);
     }
 }

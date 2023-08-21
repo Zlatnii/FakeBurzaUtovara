@@ -24,6 +24,7 @@ return new class extends Migration
             $table->timestamp('last_login')->nullable();
             $table->foreignId('package_id')->nullable()->constrained('package')->onDelete('set null');
             $table->foreignId('role_id')->nullable()->constrained('roles')->onDelete('set null');
+            $table->foreignId('posts_id')->nullable()->constrained('posts')->onDelete('set null');
         });
     }
 

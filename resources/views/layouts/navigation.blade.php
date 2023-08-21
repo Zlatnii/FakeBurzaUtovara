@@ -64,7 +64,7 @@
         <x-nav-link :href="route('about')">
             {{ __('O nama') }}
         </x-nav-link>
-        <x-nav-link :href="route('dashboard')">
+        <x-nav-link :href="route('posts.index')">
             {{ __('Ponuda utovara') }}
         </x-nav-link>
         <x-nav-link :href="route('dashboard')">
